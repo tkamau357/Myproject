@@ -25,9 +25,9 @@ ul {
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700049112.jpg");
-    background-color: #c26d6d;
-    height: 1000px;
+    background-image: url("https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvdXAlMjBvZiUyMGRvZ3N8ZW58MHx8MHx8&w=1000&q=80");
+    background-color: #695c5c;
+    height: 280px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,15 +59,44 @@ ul {
   }
   
   input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    color: #4CAF50;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
   }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
+
+  input[type=edit] {
+    background-color: #432746;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=delete] {
+    background-color: #432746;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .card{
+    background-color: #432746;
+    height: 200px;
+    width: 200px;
+    padding: 15px;
+    display: inline-table;
+    margin: 2rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    input[type=text] {
+      width: 100%;
+      margin-top: 0;
+    }
   }

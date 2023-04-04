@@ -17,25 +17,27 @@
       <li><a href="#dogs">Dogs</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <div id="dom-pets">
+    </div>
+    <div id="pet-info">
+    </div>
     <form
       id="pet-form" >
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-        <label for="name">Breed</label>
-        <input type="text" id="breed" breed="breed" required><br>
-        <label for="age">Age</label>
-        <input type="text" id="age" age="age" required><br>
-        <label for="sex">Sex</label>
-        <input type="text" id="sex" age="sex" required><br>
-        <label for="description">Description</label>
-        <input type="text" id="desription" age="description" required><br>
-        <button type="submit">Submit</button><br>
-        <button id="editid">EDIT</button>
-        <button id="deleteid">DELETE</button>
+        Name:<br>
+        <input type="text" name="name"><br>
+        Breed:<br>
+        <input type="text" name="breed"><br>
+        Gender:<br>
+        <input type="text" name="gender"><br>
+        Image:<br>
+        <input type="text" name="imageURL"><br>
+        Description:<br>
+        <input type="text" name="description"><br>
+        <button id="submitid" name="submit">Submit</button><br>
+        <button id="editidid" name="edit">EDIT</button>
+        <button id="deleteid" name="delete">Adopt</button>
+        
     </form>
-    <ul id="pet-list" class="cards">
-
-    </ul>
     <div class ="Petstore"> </div>
     <script src = "index.js"></script>
 </html>

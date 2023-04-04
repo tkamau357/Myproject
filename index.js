@@ -130,21 +130,24 @@ fetch("http://localhost:3001/Pets")
    .then (response => response.json())
    .then (data =>{
 
+    const petin = document.querySelector(".Petstore");
      for(let i=0;i<data.length;i++){
       let Name = data[i].name;
       let Breed = data[i].breed;
-      let Age = data[i].age;
-      let Sex = data[i].sex;
+      let Gender = data[i].gender;
       let Description = data[i].description;
       let image = data[i].imageURL;
-      document.querySelector(".Petstore").innerHTML+=`
+      const card =document.createElement("div")
+      card.classList.add("card");
+      card.innerHTML+=`
+      <img  src='${image}'style='width:150px; height:150px;'>
+      
           <p>${Name}</p>
          <p>${Breed}</p>
-         <p>${Age}</p>
-         <p>${Sex}</p>
+         <p>${Gender}</p>
          <p>${Description}</p>
-         <img src='${image}'>
          `;
+        petin.appendChild(card); 
     }
     })
     // Post f
@@ -157,8 +160,7 @@ fetch("http://localhost:3001/Pets")
         name:e.target.name.value,
         breed:e.target.breed.value,
         imageURL:e.target.image.value,
-        Age:e.target.age.value,
-        Sex:e.target.sex.value,
+        Gender:e.target.gender.value,
         Description:e.target.description.value,
     }
     console.log("hrtr");
@@ -170,7 +172,7 @@ fetch("http://localhost:3001/Pets")
      headers: {
         "Content-Type": "application/json"
      },
-      body: JSON.stringify(shoeObj),
+      body: JSON.stringify(petObj),
  })
  .then (response => response.json())
  .then (data => console.log(data))
@@ -191,3 +193,103 @@ e.preventDefault();
 }
 
 
+// document.addEventListener("DOMContentLoaded", () => {
+//     const pets = document.querySelector('#dom-pets')
+//       const petInfo = document.querySelector('#pet-info')
+//       const petForm = document.querySelector('#pet-form')
+//       petForm.addEventListener('submit', createNewPet)
+//     fetch('http://localhost:3001/Pets')
+//       .then(response => response.json())
+//       .then(pets => pets.forEach(slapItOnTheDOM))
+//     function slapItOnTheDOM(pet) {
+//         const petLi = document.createElement('li');
+//         petLi.dataset.id = pet.id
+//         petLi.innerHTML = `<span>${pet.name} the ${pet.species}</span>`
+//         pets.appendChild(petLi);
+//     const buttond = document.createElement('button')
+//         buttond.dataset.id = pet.id
+//         buttond.setAttribute("id", `delete-button-${pet.id}`)
+//         buttond.innerText = "DELETE"
+//         pets.appendChild(buttond);
+//         buttond.addEventListener('click', () => deletePet(pet))
+//     const buttonu = document.createElement('button')
+//         buttonu.dataset.id = pet.id
+//         buttonu.setAttribute("id", `update-button-${pet.id}`)
+//         buttonu.innerText = "UPDATE"
+//         pets.appendChild(buttonu);
+//         buttonu.addEventListener('click', () => editPet(Pet))
+//       }
+//     function gatherFormData(){
+//         return {
+//           gender: event.target.gender.value,
+//           image: event.target.imageURL.value,
+//           name: event.target.name.value,
+//           breed: event.target.breed.value,
+//           description: event.target.description.value
+//         }
+//       }
+//     /////// CREATE ///////
+//     function createNewPet(event) {
+//         event.preventDefault();
+//         let newPet = gatherFormData();
+//         return fetch('http://localhost:3001/Pets', {
+//           method: "POST",
+//           headers: {
+//             'Content-Type': 'application/json',
+//             'Accept': 'application/json'
+//           },
+//           body: JSON.stringify(newPet)
+//         })
+//         .then(res => res.json())
+//         .then(pet => (slapItOnTheDOM(pet)));
+//       }
+//     /////// UPDATE ///////
+//     function editPet(pet) {
+//           console.log(`${pet.name} edit button has been clicked!`)
+//           const eForm = document.createElement('form')
+//           eForm.id = "update-form"
+//           eForm.innerHTML = `<h2> Update ${pet.name}</h2>Name:<br><input type="text" name="name" value="${pet.name}"><br>Breed:<br><input type="text" name="breed" value="${pet.breed}"><br>Description:<br><input type="text" name="description" value="${animal.description}"><br>Gender:<br><input type="text" name="gender" value="${animal.gender}"><br>Image:<br><input type="text" name="imageURL" value="${animal.imageURL}"><br><input type="submit" name="">`
+//           petInfo.append(eForm)
+//           eForm.addEventListener('submit', (event) => updatePet(event, pet))
+//       }
+//     function updatePet(event, pet) {
+//         event.preventDefault();
+//         let updatedPet = gatherFormData()
+//         updateOnBackend(updatedPet, pet.id)
+//         .then(updateOnFrontEnd)
+//       }
+//     function updateOnBackend(updatedPet, id){
+//         console.log("fetch began")
+//         return fetch(`http://localhost:3001/Pets/${id}`, {
+//         method: "PATCH",
+//         body: JSON.stringify(updatedPet),
+//         headers: {
+//           'Content-Type': 'application/json',
+//         }
+//       })
+//       .then(res => res.json())
+//     }
+//     function updateOnFrontEnd(pet){
+//         console.log(`${pet.name} is being updated`)
+//         const petSpan = pets.querySelector(`li[data-id="${pet.id}"]>span`)
+//         petSpan.innerText = `${pet.name} the ${pet.breed}` 
+//         console.log(`${pet.name} has been updated`)
+//       }
+//     /////// DELETE ///////
+//         function deletePet(pet) {
+//         console.log(`${pet.name} is going away`)
+//         const petLi = document.querySelector(`[data-id="${pet.id}"]`);
+//         const buttond = document.querySelector(`#delete-button-${pet.id}`);
+//         const buttonu = document.querySelector(`#update-button-${pet.id}`);
+//     return  fetch(`http://localhost:3001/Pets/${pet.id}`, {
+//           method: "DELETE"
+//         })
+//         .then(response => response.json())
+//         .then(() => {
+//           petLi.remove();
+//           buttond.remove()
+//           buttonu.remove()
+//         })
+//         .then(console.log(`${pet.name} is gone`))
+//     }
+//     })

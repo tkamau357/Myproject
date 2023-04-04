@@ -4,91 +4,81 @@
       "id": 1,
       "name": "Spot",
       "breed": "Jack russell",
-      "age": "3 years",
-      "sex": "Male",
-      "description": "are an energetic breed that rely on a high level of exercise and stimulation. They are relatively free from any serious health complaints.",
+      "gender": "Male",
+      "description": "They are an energetic breed that rely on a high level of exercise and stimulation.<br> They are relatively free from any serious health complaints.",
       "imageURL": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-10/jack%20russell%201.jpg?h=9fcb0da0&itok=6FG3fRcf"
     },
     {
       "id": 2,
       "name": "Ralph",
       "breed": "Siberian Husky",
-      "age": "1 year",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://media-be.chewy.com/wp-content/uploads/2021/06/11142612/husky-dog-breed-1325299746-922x615.jpg"
+      "gender": "Male",
+      "description": "The Siberian Husky is a medium-sized working sled dog breed. The breed belongs to the Spitz genetic family.<br> It is recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings, and is<br> smaller than the similar-looking Alaskan Malamute.",
+      "imageURL": "https://www.insidedogsworld.com/wp-content/uploads/2016/12/husky10.jpg"
     },
     {
       "id": 3,
       "name": "Lucky",
       "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Female",
-      "description": "",
-      "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrGk4KwKphmcIsmc8pKFRwfH7jfEIFbxjyxQ&usqp=CAU"
+      "gender": "Female",
+      "description": "The Golden Retriever is a Scottish breed of retriever dog of medium size. <br>It is characterised by a gentle and affectionate nature and a striking golden coat.",
+      "imageURL": "https://www.lombardvet.com/sites/default/files/styles/large/public/golden-retriever-dog-breed-info_0.jpg?itok=sYARdO3q"
     },
     {
       "id": 4,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "1.5 years",
-      "sex": "Female",
-      "description": "",
-      "imageURL": "https://images.immediate.co.uk/production/volatile/sites/4/2018/08/iStock_13967830_XLARGE-90f249d.jpg?resize=768,574"
+      "name": "Puffy",
+      "breed": "Afghan Hound",
+      "gender": "Female",
+      "description": "The Afghan Hound is a hound that is distinguished by its thick, fine, silky coat and its tail <br>with a ring curl at the end. The breed is selectively bred for its unique features in the cold mountains of Afghanistan. ",
+      "imageURL": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Afghan_dog_-_cropped.jpg"
     },
     {
       "id": 5,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Fluffy",
+      "breed": "German shepherd",
+      "gender": "Male",
+      "description": "The German Shepherd Dog is one of the most popular dog breeds — for good reasons. <br>They’re intelligent and capable working dogs. Their devotion and <br>courage are unmatched. And they’re amazingly versatile",
+      "imageURL": "https://t4.ftcdn.net/jpg/05/36/65/77/360_F_536657749_YesCVIHVGd2A2Su4H4ThUTSVcgFWsRsG.jpg"
     },
     {
       "id": 6,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Blinky",
+      "breed": "Chow chow",
+      "gender": "Male",
+      "description": "The Chow Chow is a spitz-type of dog breed originally from northern China. <br>The Chow Chow is a sturdily built dog, square in profile, with a broad skull and small,<br> triangular, erect ears with rounded tips. The breed is known for a very dense <br>double coat that is either smooth or rough.",
+      "imageURL": "https://i.pinimg.com/originals/ff/6e/a2/ff6ea261410a85c4fec775eb00b4e9b0.jpg"
     },
     {
       "id": 7,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Cheddar",
+      "breed": "Pembroke Welsh Corgi",
+      "gender": "Male",
+      "description": "Pembroke Welsh Corgis love to be involved in the family, and tend to follow wherever <br>their owners go. They have a great desire to please their owners, thus making them eager <br>to learn and train. The dogs can also be challenging to train due to their <br>working background, stubbornness and intelligence.",
+      "imageURL": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Welsh%20Corgi%20%28Pembroke%292.jpg?h=917a952a&itok=G3ZmUY9z"
     },
     {
       "id": 8,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Daisy",
+      "breed": "Shih Tzu",
+      "sex": "Female",
+      "description": "The Shih Tzu is a toy dog breed originating from Tibet and believed to be bred <br>from the Pekingese and the Lhasa Apso. Shih Tzus are known for their short snouts and large <br>round eyes, as well as their long coat, floppy ears, and short and stout posture.",
+      "imageURL": "https://www.purina.com.au/-/media/project/purina/main/breeds/dog/mobile/dog_shih-tzu_mobile.jpg?h=300&la=en&w=375&hash=190EB24E3318BB7C7A9FB7AF9DF19181"
     },
     {
       "id": 9,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Chase",
+      "breed": "French Bulldog",
+      "gender": "Male",
+      "description": "The Frenchie is playful, alert, adaptable, and completely irresistible. <br>The French Bulldog resembles a Bulldog in miniature, except for<br> the large, erect 'bat ears' that are the breed's trademark feature.",
+      "imageURL": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-09/french%20bulldog.jpg?h=6da9d27b&itok=uUP7yqGq"
     },
     {
       "id": 10,
-      "name": "Nike React Infinity Run Flyknit",
-      "breed": "Golden retriever",
-      "age": "2 years",
-      "sex": "Male",
-      "description": "",
-      "imageURL": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+      "name": "Tracker",
+      "breed": "Border Collie",
+      "gender": "Male",
+      "description": "The Border Collie is a breed of herding dog of medium size. Widely considered <br>to be the most intelligent dog breed, they are descended from landrace <br>sheepdogs once found all over the British Isles, but became <br>standardised in the Anglo-Scottish border region.",
+      "imageURL": "https://www.lombardvet.com/sites/default/files/styles/large/public/border-collie-dog-breed-info_0.jpg?itok=QrGv2YZj"
     }
   ]
 }    
