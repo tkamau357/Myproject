@@ -13,7 +13,7 @@
       "name": "Ralph",
       "breed": "Siberian Husky",
       "gender": "Male",
-      "description": "Friendly and intelligent but somewhat independent and stubborn. They need firm, gentle training from puppyhood.",
+      "description": "Friendly and intelligent but somewhat independent and stubborn.",
       "imageURL": "https://www.insidedogsworld.com/wp-content/uploads/2016/12/husky10.jpg"
     },
     {
@@ -71,14 +71,6 @@
       "gender": "Male",
       "description": "Muscular, with a soft and loose coat forming wrinkles.",
       "imageURL": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-09/french%20bulldog.jpg?h=6da9d27b&itok=uUP7yqGq"
-    },
-    {
-      "id": 10,
-      "name": "Tracker",
-      "breed": "Border Collie",
-      "gender": "Male",
-      "description": "Extremely energetic, acrobatic, and athletic",
-      "imageURL": "https://www.lombardvet.com/sites/default/files/styles/large/public/border-collie-dog-breed-info_0.jpg?itok=QrGv2YZj"
     }
   ]
 }    

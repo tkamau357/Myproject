@@ -24,13 +24,37 @@ ul {
 
   h1{
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
+
+  p{
+    padding-inline: 20px;
+  }
+
+  .container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+   }
+   
+   img {
+     width: 400px;
+     height:200px;
+   }
+   
+   .text {
+     font-size: 15px;
+     padding:30px;
+     color: #111;
+
+   }
 
   body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("https://images.unsplash.com/photo-1525253013412-55c1a69a5738?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z3JvdXAlMjBvZiUyMGRvZ3N8ZW58MHx8MHx8&w=1000&q=80");
-    background-color: #695c5c;
+    background-color: #b1c9ce;
     height: 280px;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +70,7 @@ ul {
   }  
 
   form {
-    background-color: rgb(140, 155, 86);
+    background-color: rgb(169, 177, 141);
     padding: 20px;
     width: 50%;
     margin: 0 auto;
@@ -90,12 +114,13 @@ ul {
   }
 
   .card{
-    background-color: #432746;
+    background-color: #757a4c;
     height: 200px;
     width: 200px;
     padding: 15px;
     display: inline-table;
     margin: 2rem;
+    border-radius: 5px;
   }
 
   @media screen and (max-width: 600px) {
@@ -103,4 +128,11 @@ ul {
       width: 100%;
       margin-top: 0;
     }
+  }
+
+  footer{
+    text-align: center;
+    background-color: #333;
+    padding: 3px;
+    color:antiquewhite
   }
