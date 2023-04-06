@@ -142,7 +142,7 @@ fetch("http://localhost:3001/Pets")
       card.innerHTML+=`
       <img  src='${image}'style='width:150px; height:150px;'>
       
-          <p>${Name}</p>
+         <p>${Name}</p>
          <p>${Breed}</p>
          <p>${Gender}</p>
          <p>${Description}</p>
@@ -152,9 +152,9 @@ fetch("http://localhost:3001/Pets")
     })
     // Post f
     const form = document.querySelector('#pet-form');
- console.log(form);
- form.addEventListener('submit',handlesubmit);
- function handlesubmit(e){
+    console.log(form);
+    form.addEventListener('submit',handlesubmit);
+    function handlesubmit(e){
     e.preventDefault()
     let petObj= {
         name:e.target.name.value,
